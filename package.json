@@ -1,0 +1,27 @@
+{
+  "name": "msa_foodbot",
+  "version": "1.0.0",
+  "description": "MSA food bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanKing01/MSA_foodbot.git"
+  },
+  "keywords": [
+    "food",
+    "bot"
+  ],
+  "author": "jonathan king",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonathanKing01/MSA_foodbot/issues"
+  },
+  "homepage": "https://github.com/JonathanKing01/MSA_foodbot#readme",
+  "dependencies": {
+    "botbuilder": "^3.12.0",
+    "restify": "^6.3.4"
+  }
+}
