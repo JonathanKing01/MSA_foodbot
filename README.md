@@ -1,2 +1,1 @@
-# MSA_foodbot
-Bot for looking at/for food. Made for MSA/
+This is my foodbot repository
