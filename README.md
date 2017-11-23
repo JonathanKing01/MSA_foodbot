@@ -1,1 +1,1 @@
-This is my foodbot repository
+This is my Food Bot repository. 
