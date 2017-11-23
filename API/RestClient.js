@@ -83,7 +83,7 @@ exports.postQnAResults = function getData(url, session, question, callback){
         url: url,
         method: 'POST',
         headers: {
-            'Ocp-Apim-Subscription-Key': '[REFER TO IMAGE ABOVE]',
+            'Ocp-Apim-Subscription-Key': '3f4bd720fd174115a9b8faba59b5d05e',
             'Content-Type':'application/json'
         },
         json: {
