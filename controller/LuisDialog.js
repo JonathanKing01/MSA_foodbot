@@ -1,8 +1,9 @@
 var builder = require('botbuilder');
 var food = require("./FavouriteFoods");
 var restaurant = require("./RestaurantCard");
-var nutrition = require('./nutritionalCard');;
-var customVision = require('./CustomVision')
+var nutrition = require('./nutritionalCard');
+var customVision = require('./CustomVision');
+var qna = require('./QnAmaker');
 
 // Some sections have been omitted
 var isAttachment = false;
@@ -152,6 +153,17 @@ exports.startDialog = function (bot) {
         matches: 'LookForFavourite'
     });
     
+    bot.dialog('QnA', [
+        function (session, args, next) {
+            session.dialogData.args = args || {};
+            builder.Prompts.text(session, "What is your question?");
+        },
+        function (session, results, next) {
+            qna.talkToQnA(session, results.response);
+        }
+    ]).triggerAction({
+        matches: 'QnA'
+    });
 
     function isAttachment(session) { 
         var msg = session.message.text;
